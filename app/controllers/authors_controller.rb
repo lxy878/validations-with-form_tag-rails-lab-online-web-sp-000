@@ -8,6 +8,7 @@ class AuthorsController < ApplicationController
   end
 
   def create
+    raise author_path
     @author = Author.new(author_params)
     if @author.valid?
       @author.save
