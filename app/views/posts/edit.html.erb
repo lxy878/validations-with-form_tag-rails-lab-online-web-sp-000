@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field<%= ' '  if @past.errors[:title].any?%>">
+  <div class="field<%= ' '  if @past.errors[:title].any? %>">
     <%= label_tag "title", "Title" %>
     <%= text_field_tag "title", @post.title %>
   </div>
